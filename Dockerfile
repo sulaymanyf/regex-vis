@@ -1,10 +1,13 @@
 FROM node:18
 
 # Install pnpm
+
 RUN npm install -g pnpm
 
 # Set the working directory
 WORKDIR /app
+
+
 
 # Copy package.json and package-lock.json to the working directory
 COPY . ./
@@ -16,7 +19,18 @@ RUN pnpm install
 COPY . .
 
 # Expose port 3000
-EXPOSE 3000
+EXPOSE 3010
 
 # Start the application
 CMD [ "pnpm", "start"]
+
+
+
+
+
+
+
+
+
+
+
