@@ -1,6 +1,9 @@
 services:
   regex-vis:
+
     build: .
     container_name: regex-vis
     ports:
-      - "3000:3000"
+      - "3010:3000"
+
+
