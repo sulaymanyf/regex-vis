@@ -27,4 +27,9 @@ export default defineConfig({
     globals: true,
     setupFiles: './tests/setup.ts',
   },
+  // ✅ 加上这个
+  server: {
+    port: 3010,    // 指定端口
+    host: true     // Docker 中使用，允许通过 0.0.0.0 访问
+  }
 })
